@@ -1,0 +1,17 @@
+requests
+bs4
+urllib.request
+os
+time
+shutil
+matplotlib.pyplot
+seaborn
+pandas
+numpy
+random
+csv
+PIL
+glob
+math
+cv2
+imagededup

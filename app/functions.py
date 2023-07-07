@@ -8,7 +8,7 @@ import pickle
 import numpy as np
 
 def treino():
-    diretorio_raiz = 'C:/Users/thiago.silva/API/Projeto/Sistemas_Inteligentes/data/dados_tratados'
+    diretorio_raiz = '../data/dados_tratados'
 
     # Defina os diretórios de treinamento e validação
     train_path = diretorio_raiz+'/train_path'
@@ -73,7 +73,7 @@ def treino():
     history = model.fit(train_generator, epochs=25, steps_per_epoch=20, 
                         validation_data = validation_generator, verbose = 1, validation_steps=3)
     
-    with open("C:/Users/thiago.silva/API/Projeto/Sistemas_Inteligentes/models/toxic_to_pet.pkl", "wb") as f:
+    with open("../models/toxic_to_pet.pkl", "wb") as f:
         pickle.dump(model, f)
 
     return score, history, summary

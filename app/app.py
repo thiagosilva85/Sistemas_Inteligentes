@@ -7,7 +7,7 @@ import pickle
 import os
 
 # Carregue o modelo a partir do arquivo pickle
-model_path = "../models/toxic_to_pet.pkl"
+model_path = "models/toxic_to_pet.pkl"
 with open(model_path, "rb") as f:
     model = pickle.load(f)
 

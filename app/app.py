@@ -11,7 +11,6 @@ model_path = "C:/Users/thiago.silva/API/Projeto/Sistemas_Inteligentes/models/tox
 with open(model_path, "rb") as f:
     model = pickle.load(f)
 
-
 def predict(imagem):
     # Salva a imagem em um arquivo temporário
     temp_file = "temp.png"
